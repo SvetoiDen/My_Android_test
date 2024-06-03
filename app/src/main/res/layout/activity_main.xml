@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#3D3D3D">
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="500px"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:text="Калькулятор"
+        android:textSize="26dp" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:hint="Введи первое число"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="#CFCFCF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:hint="Введи второе число"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="#CFCFCF"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="15dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/_1_"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:onClick="get_result"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="24dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/_2_"
+            android:layout_gravity="center"
+            android:layout_marginEnd="15dp"
+            android:checked="false"
+            android:focusable="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="+"
+            android:onClick="get_result"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/_3_"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:onClick="get_result"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="24dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:text="х"
+            android:id="@+id/_4_"
+            android:onClick="get_result"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="24dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/text_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_gravity="center"
+        android:layout_marginTop="60px"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:textSize="24dp" />
+
+</LinearLayout>
